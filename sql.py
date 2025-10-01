@@ -27,4 +27,7 @@ students = ['''insert into students (name, age, grade, Class, section) values ('
 
 for student in students:
     cursor.execute(student)
+
+#close the connection   
 conn.commit()
+conn.close()
